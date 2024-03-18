@@ -1,17 +1,44 @@
 body {
-    background-color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -99;
+  }
+  .content {
+    position: relative;
+    z-index: 1;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 100px 0;
   }
   .navbar {
-    background-color: #333;
+    background-color: transparent;
   }
   .navbar-brand {
     font-size: 24px;
     font-weight: bold;
+    color: #fff;
   }
   .project-card {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background */
     border: none;
     margin-bottom: 30px;
     transition: all 0.3s ease;
@@ -19,6 +46,10 @@ body {
   .project-card:hover {
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
     transform: translateY(-5px);
+  }
+  .project-card .card-title,
+  .project-card .card-text {
+    color: #fff; /* White text */
   }
   .enlarge-img {
     transition: transform 0.3s ease;
@@ -30,3 +61,48 @@ body {
     background: linear-gradient(to bottom, #000000 0%, #333333 100%);
     color: #fff;
   }
+  .additional-content {
+    background-image: url('https://gundam-factory.net/images/gallery/first/first_345.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff;
+    position: relative;
+  }
+  .additional-content-1 {
+    background-image: url('https://i.ytimg.com/vi/9NOncx2jU0Q/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff;
+    position: relative;
+  }
+  .additional-content-2 {
+    background-image: url('https://bostondynamics.com/wp-content/uploads/2023/07/atlas-runs-balance-beam-1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff;
+    position: relative;
+  }
+  .content-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.705); /* Semi-transparent overlay */
+  }
+  .additional-content-text {
+    position: relative;
+    z-index: 2;
+  }
+.contact-form{
+    background-color: #f8f9fa9c; /* Light gray background */
+      color: #343a40; /* Dark text color */
+}
+.form-label {
+    font-weight: bold; /* Bold labels */
+  }
+
+  
